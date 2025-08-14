@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica:ital@0;1&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Mea+Culpa&family=Syne+Mono&family=VT323&display=swap');
+a {
+    color: beige;
+}
+body {
+    background-color: #373028;
+    background-image:  url("/textures/bg.jpg");
+    background-blend-mode: soft-light;
+    text-shadow: 0px 0px 4px rgb(69, 47, 3);
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 21px;
+    image-rendering: pixelated; /* helps when scaled inside canvas/images */
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+    
+}
+/*
+#topBar {
+    font-family: "Mea Culpa", cursive;
+    font-size: 100px;
+    color: white;
+    text-shadow: 0px 0px 15px rgb(0, 0, 0);
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+}
+    */
+
+#backButton {
+    position: absolute;
+    top: 15%;   /* moves it above card */
+    right: 0px; /* moves it outside to the right */
+    text-align: right;
+    float: right;
+}
+#cardBottom {
+    color: beige;
+}
+#cardWrapper {
+    position: relative;
+    display: inline-block;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#seeneFont {
+    font-family: "Mea Culpa", cursive;
+    font-size: 100px;
+     -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+    color: rgb(82, 3, 3);
+    text-shadow: 0px 0px 4px rgb(232, 214, 199);
+    line-height:20%;
+}
+#title {
+    position: absolute;
+    text-align: left;
+    top: 80px;
+    color: beige;
+    line-height: 70%;
+
+}
+h3 {
+    font-family: "IM Fell Double Pica", serif;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+}
+p {
+    font-family: "Syne Mono", monospace;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+}
+option {
+    text-align: center;
+}
+
+.star-rating {
+    text-align: center;
+    line-height: 135%;
+    color: beige;
+}
+.star {
+    color: rgb(160, 152, 144);
+    cursor: pointer;
+    font-size: 50px;
+    text-shadow: 0px 0px 5px rgb(13, 13, 13);
+    -webkit-text-stroke: 1px black;
+
+}
+.star.active {
+    color: rgb(255, 179, 0);
+}
