@@ -42,6 +42,50 @@ body {
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: grayscale;
 }
+#compassImg {
+    filter: brightness(0.75) ;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.compass-container {
+    position: relative;
+    display: inline-block;
+    width: 650px;
+    margin: auto;
+}
+
+.compass-link {
+    position: absolute;
+    display: block;
+    text-decoration: none;
+    font-size: 28px;
+    color: beige;
+    z-index: 10;
+}
+
+.compass-link.north {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.compass-link.south {
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.compass-link.east {
+    right: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.compass-link.west {
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 #seeneFont {
     font-family: "Mea Culpa", cursive;
