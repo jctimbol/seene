@@ -3,9 +3,13 @@ async function loadSongsByRegion(region) {
         .from('bandss')
         .select('id, name')
         .ilike('region', region);
-    
+
     if(bandError) {
         console.error('error: ', bandError);
+        document.getElementById('dbError').style.display = 'block';
+        document.getElementById('backButton').style.display = 'none';
+        document.getElementById('star-rating').style.display = 'none';
+        document.getElementById('nextSong').style.display = 'none';
         return;
     }
 
