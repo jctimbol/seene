@@ -48,8 +48,8 @@ function renderCurrentSong() {
             padding: 50px;
             width: 750px;
             height: 400px;
-            align: center;
-            //border: 1px solid blue;
+            align-items: center;
+            /* border: 1px solid blue; */
             margin-top: 150px;
             border: 10px solid transparent;
             border-image-source: url('/textures/frame.jpg'); 
@@ -128,7 +128,7 @@ function renderCurrentSong() {
             padding: 50px;
             width: 750px;
             height: 400px;
-            align: center;
+            align-items: center;
             //border: 1px solid blue;
             margin-top: 150px;
             border: 10px solid transparent;
