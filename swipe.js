@@ -36,24 +36,6 @@ async function loadSongsByRegion(region) {
 }
 
 async function submitRating() {
-    
-    const { data: bands, error: bandError } = await client
-        .from('bandss')
-        .select('id, name')
-        .ilike('region', region);
-    
-    if(bandError) {
-        console.error('error: ', bandError);
-        return;
-    }
-
-    const bandIds = bands.map(b => b.id);
-
-    const { data : songs, error: songError } = await client
-        .from('songs')
-        .select('*, bandss(name)')
-        .in('band_id', bandIds);
-
     const songId = shuffledSongs[currentSongIndex].id;
 
     const {data: songRating, error} = await client
