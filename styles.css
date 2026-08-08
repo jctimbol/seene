@@ -43,7 +43,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 #compassImg {
-    filter: brightness(0.75) ;
+    filter: brightness(0.75);
     image-rendering: pixelated;
     image-rendering: crisp-edges;
 }

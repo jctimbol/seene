@@ -109,9 +109,9 @@ function renderCurrentSong() {
             color: rgb(82, 3, 3);
         }
         .albumCover {   
-            image-rendering: pixelated;
+            /* image-rendering: pixelated; */
             image-rendering: crisp-edges;
-            filter: contrast(1.25) brightness(0.95) saturate(1.25) sepia(0.2); 
+            /* filter: contrast(1.25) brightness(0.95) saturate(1.25) sepia(0.2); */
             filter: drop-shadow(0px 0px 10px rgb(46, 50, 44));
         }
         button {margin: 10px;} 
