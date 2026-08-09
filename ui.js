@@ -48,8 +48,8 @@ function renderCurrentSong() {
             padding: 50px;
             width: 750px;
             height: 400px;
-            align: center;
-            //border: 1px solid blue;
+            align-items: center;
+            /* border: 1px solid blue; */
             margin-top: 150px;
             border: 10px solid transparent;
             border-image-source: url('/textures/frame.jpg'); 
@@ -109,9 +109,9 @@ function renderCurrentSong() {
             color: rgb(82, 3, 3);
         }
         .albumCover {   
-            image-rendering: pixelated;
+            /* image-rendering: pixelated; */
             image-rendering: crisp-edges;
-            filter: contrast(1.25) brightness(0.95) saturate(1.25) sepia(0.2); 
+            /* filter: contrast(1.25) brightness(0.95) saturate(1.25) sepia(0.2); */
             filter: drop-shadow(0px 0px 10px rgb(46, 50, 44));
         }
         button {margin: 10px;} 
@@ -128,7 +128,7 @@ function renderCurrentSong() {
             padding: 50px;
             width: 750px;
             height: 400px;
-            align: center;
+            align-items: center;
             //border: 1px solid blue;
             margin-top: 150px;
             border: 10px solid transparent;
